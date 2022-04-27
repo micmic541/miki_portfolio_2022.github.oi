@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "style.scss",
+        "modules/_variables.scss",
+        "breakpoints/_base.scss",
+        "breakpoints/_tablets.scss",
+        "breakpoints/_phones.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
