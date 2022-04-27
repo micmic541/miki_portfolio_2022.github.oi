@@ -10,7 +10,13 @@
     height: 35vh;
     &__ttl {
         font-family: $enFont;
-
+        &__ttlWrap {
+            font-size: $mvTtl;
+            &__ttlBold {
+                display: inline-block;
+                font-weight: $mvTtlWeight;
+            }
+        }
     }
     &__wave {
         position: absolute;

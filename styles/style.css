@@ -12,6 +12,15 @@
   font-family: "Mada", sans-serif;
 }
 
+.main-visual__ttl__ttlWrap {
+  font-size: 4.5em;
+}
+
+.main-visual__ttl__ttlWrap__ttlBold {
+  display: inline-block;
+  font-weight: bold;
+}
+
 .main-visual__wave {
   position: absolute;
   bottom: 0;
