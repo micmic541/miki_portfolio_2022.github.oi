@@ -12,11 +12,11 @@
   font-family: "Mada", sans-serif;
 }
 
-.main-visual__ttl__ttlWrap {
+.main-visual__ttl .mv__ttlWrap {
   font-size: 4.5em;
 }
 
-.main-visual__ttl__ttlWrap__ttlBold {
+.main-visual__ttl .mv__ttlWrap .mv__ttlBold {
   display: inline-block;
   font-weight: bold;
 }

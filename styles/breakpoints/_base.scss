@@ -10,9 +10,9 @@
     height: 35vh;
     &__ttl {
         font-family: $enFont;
-        &__ttlWrap {
+        & .mv__ttlWrap {
             font-size: $mvTtl;
-            &__ttlBold {
+            & .mv__ttlBold {
                 display: inline-block;
                 font-weight: $mvTtlWeight;
             }
