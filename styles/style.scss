@@ -1,10 +1,10 @@
 @import 'modules/variables';
 @import "breakpoints/base";
 
-@media (max-width: 960px) {
+@media (max-width: 1086px) {
     @import "breakpoints/tablets";
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
     @import "breakpoints/phones";
 }

@@ -7,11 +7,10 @@
 .main-visual {
     position: relative;
     background:  $waveBc;
-
     height: 20vh;
     &__ttl {
         font-family: $enFont;
-        padding-top: 10.5vh;
+        padding-top: 7.5vh;
         margin: 0 auto;
         & .mv__ttlWrap {
             & h1 {
@@ -26,6 +25,7 @@
         & .mv__snsWrap {
             display: flex;
             align-items: baseline;
+            flex-flow: row wrap;
             color: $darkTxtSub;
             & .mv__snsBox {
                 & ul {
@@ -37,7 +37,7 @@
                             & .my-big {
                                 transition: all .3s ease;
                                 font-size: 1.55em;
-                                margin-right: 0.75vw;
+                                margin-right: 15px;
                                 color: $darkTxtSub;
                             }
                         }

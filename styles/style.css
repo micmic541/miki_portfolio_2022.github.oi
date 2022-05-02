@@ -10,7 +10,7 @@
 
 .main-visual__ttl {
   font-family: "Mada", sans-serif;
-  padding-top: 10.5vh;
+  padding-top: 7.5vh;
   margin: 0 auto;
 }
 
@@ -31,6 +31,10 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   color: #eaddcf;
 }
 
@@ -49,7 +53,7 @@
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   font-size: 1.55em;
-  margin-right: 0.75vw;
+  margin-right: 15px;
   color: #eaddcf;
 }
 
@@ -72,9 +76,27 @@
   fill: #8c7851;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1086px) {
   .main-visual {
     height: 25vh;
+  }
+  .main-visual__ttl {
+    padding-top: 10.5vh;
+  }
+  .main-visual__ttl .mv__ttlWrap h1 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-visual {
+    height: 27.5vh;
+  }
+  .main-visual__ttl {
+    padding-top: 8.5vh;
+  }
+  .main-visual__ttl .mv__ttlWrap h1 {
+    font-size: 2em;
   }
 }
 /*# sourceMappingURL=style.css.map */

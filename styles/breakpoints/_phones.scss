@@ -1,4 +1,12 @@
 // mv
 .main-visual {
-    height: 25vh;
+    height: 27.5vh;
+    &__ttl {
+        padding-top: 8.5vh;
+        & .mv__ttlWrap {
+            & h1 {
+                font-size: $mvTtlSm;
+            }
+        }
+    }
 }
