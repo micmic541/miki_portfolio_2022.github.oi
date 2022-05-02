@@ -7,14 +7,40 @@
 .main-visual {
     position: relative;
     background:  $waveBc;
-    height: 35vh;
+    height: 20vh;
     &__ttl {
         font-family: $enFont;
+        padding-top: 10.5vh;
+        margin: 0 auto;
         & .mv__ttlWrap {
-            font-size: $mvTtl;
-            & .mv__ttlBold {
-                display: inline-block;
-                font-weight: $mvTtlWeight;
+            & h1 {
+                color: $darkTxt;
+                font-size: $mvTtl;
+                & .mv__ttlBold {
+                    display: inline-block;
+                    font-weight: $mvTtlWeight;
+                }
+            }
+        }
+        & .mv__snsWrap {
+            display: flex;
+            align-items: baseline;
+            color: $darkTxtSub;
+            & .mv__snsBox {
+                & ul {
+                    display: flex;
+                    padding-left: .9vw;
+                    & li {
+                        list-style-type: none;
+                        & a {
+                            & .my-big {
+                                font-size: 1.35em;
+                                margin-right: 0.45vw;
+                                color: $darkTxtSub;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -24,6 +50,7 @@
         left: 0;
         width: 100%;
         height: 0%;
+        z-index: -1;
         & svg {
             & path {
                 fill: $waveBc;
