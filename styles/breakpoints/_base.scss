@@ -7,6 +7,7 @@
 .main-visual {
     position: relative;
     background:  $waveBc;
+
     height: 20vh;
     &__ttl {
         font-family: $enFont;
@@ -34,9 +35,18 @@
                         list-style-type: none;
                         & a {
                             & .my-big {
-                                font-size: 1.35em;
-                                margin-right: 0.45vw;
+                                transition: all .3s ease;
+                                font-size: 1.55em;
+                                margin-right: 0.75vw;
                                 color: $darkTxtSub;
+                            }
+                        }
+                        &:hover {
+                            & a {
+                                & .my-big {
+                                    color: $darkTxt;
+                                    transform: scale(1.3);
+                                }
                             }
                         }
                     }
@@ -45,6 +55,7 @@
         }
     }
     &__wave {
+        
         position: absolute;
         bottom: 0;
         left: 0;
