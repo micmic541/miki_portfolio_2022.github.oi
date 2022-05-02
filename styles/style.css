@@ -76,6 +76,14 @@
   fill: #8c7851;
 }
 
+.about {
+  margin: 25vw auto 0 auto;
+}
+
+.skillBox {
+  margin: 0 auto;
+}
+
 @media (max-width: 1086px) {
   .main-visual {
     height: 25vh;
