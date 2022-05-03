@@ -6,9 +6,8 @@
 // mv
 .main-visual {
     position: relative;
-    // background:  $waveBc;
-    background:linear-gradient(45deg, #F0C27B,#4B1248);/*グラデーションを定義*/
-    background-size: 200% 200%;/*サイズを大きくひきのばす*/
+    background: linear-gradient(45deg, $waveBgFirst,$waveBcSecond);
+    background-size: 200% 200%;
     animation: bggradient 20s ease infinite;
 
     height: auto;
@@ -108,4 +107,4 @@
     100% {
       background-position: 0% 50%;
     }
-  }
+}
