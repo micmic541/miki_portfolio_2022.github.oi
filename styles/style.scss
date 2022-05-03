@@ -1,10 +1,68 @@
 @import 'modules/variables';
 @import "breakpoints/base";
 
+
+// SMALL SCREEN LAPTOP
 @media (max-width: 1086px) {
     @import "breakpoints/tablets";
 }
-
+// TABLETS
 @media (max-width: 576px) {
     @import "breakpoints/phones";
+}
+
+
+// -- FOR WAVE 1
+@media (max-width: 1680px) {
+    .waveBox {
+        &__wave {
+            top: calc(80vh / 4) !important;
+        }
+    }
+}
+// -- FOR WAVE 2
+@media (max-width: 1500px) {
+    .waveBox {
+        &__wave {
+            top: calc(105vh / 4) !important;
+        }
+    }
+}
+// -- FOR WAVE 3
+@media (max-width: 1280px) {
+    .waveBox {
+        &__wave {
+            top: calc(120vh / 4) !important;
+        }
+    }
+}
+// -- FOR WAVE 4
+@media (max-height: 668px) {
+    .main-visual {
+        height: 33.5vh !important;
+    }
+}
+// -- FOR WAVE 5
+@media (max-width: 1280px) and (max-height: 800px){
+    .main-visual {
+        height: 63vh !important;
+    }
+}
+// -- FOR WAVE 6
+@media (max-width: 540px) and (max-height: 720px){
+    .main-visual {
+        height: 36.5vh !important;
+    }
+}
+// -- FOR WAVE 7 / IPHONE SE
+@media (max-width: 375px) and (max-height: 667px){
+    .main-visual {
+        height: 33.5vh !important;
+    }
+}
+// -- FOR WAVE 8
+@media (max-width: 360px) and (max-height: 740px){
+    .main-visual {
+        height: 32vh !important;
+    }
 }

@@ -4,8 +4,11 @@
 
 .main-visual {
   position: relative;
-  background: #8c7851;
-  height: 20vh;
+  background: linear-gradient(45deg, #F0C27B, #4B1248);
+  -webkit-animation: bggradient 20s ease infinite;
+          animation: bggradient 20s ease infinite;
+  background-size: 200% 200%;
+  height: 55vh;
 }
 
 .main-visual__ttl {
@@ -38,6 +41,10 @@
   color: #eaddcf;
 }
 
+.main-visual__ttl .mv__snsWrap .mv__snsBox {
+  z-index: 3;
+}
+
 .main-visual__ttl .mv__snsWrap .mv__snsBox ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,30 +70,55 @@
           transform: scale(1.3);
 }
 
-.main-visual__wave {
+.waveBox .waveBox__wave {
   position: absolute;
-  bottom: 0;
+  top: calc(64vh / 4);
   left: 0;
   width: 100%;
   height: 0%;
-  z-index: -1;
+  z-index: 1;
 }
 
-.main-visual__wave svg path {
-  fill: #8c7851;
+.waveBox .waveBox__wave svg path {
+  fill: #fff;
 }
 
 .about {
-  margin: 25vw auto 0 auto;
+  margin: 3vw auto 0 auto;
+  position: relative;
 }
 
 .skillBox {
   margin: 0 auto;
 }
 
+@-webkit-keyframes bggradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes bggradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @media (max-width: 1086px) {
   .main-visual {
-    height: 25vh;
+    height: 45vh;
   }
   .main-visual__ttl {
     padding-top: 10.5vh;
@@ -94,17 +126,71 @@
   .main-visual__ttl .mv__ttlWrap h1 {
     font-size: 3em;
   }
+  .waveBox__wave {
+    top: calc(125vh / 4) !important;
+  }
 }
 
 @media (max-width: 576px) {
   .main-visual {
-    height: 27.5vh;
+    height: 30.5vh !important;
   }
   .main-visual__ttl {
-    padding-top: 8.5vh;
+    padding-top: 4.5vh;
   }
   .main-visual__ttl .mv__ttlWrap h1 {
     font-size: 2em;
+  }
+  .waveBox__wave {
+    top: calc(86vh / 4) !important;
+  }
+}
+
+@media (max-width: 1680px) {
+  .waveBox__wave {
+    top: calc(80vh / 4) !important;
+  }
+}
+
+@media (max-width: 1500px) {
+  .waveBox__wave {
+    top: calc(105vh / 4) !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .waveBox__wave {
+    top: calc(120vh / 4) !important;
+  }
+}
+
+@media (max-height: 668px) {
+  .main-visual {
+    height: 33.5vh !important;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 800px) {
+  .main-visual {
+    height: 63vh !important;
+  }
+}
+
+@media (max-width: 540px) and (max-height: 720px) {
+  .main-visual {
+    height: 36.5vh !important;
+  }
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .main-visual {
+    height: 33.5vh !important;
+  }
+}
+
+@media (max-width: 360px) and (max-height: 740px) {
+  .main-visual {
+    height: 32vh !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

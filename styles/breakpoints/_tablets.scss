@@ -1,6 +1,6 @@
 // mv
 .main-visual {
-    height: 25vh;
+    height: 45vh;
     &__ttl {
         padding-top: 10.5vh;
         & .mv__ttlWrap {
@@ -8,5 +8,12 @@
                 font-size: $mvTtlTb;
             }
         }
+    }
+}
+
+// wave
+.waveBox {
+    &__wave {
+        top: calc(125vh / 4) !important;
     }
 }
