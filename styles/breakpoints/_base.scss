@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+img {
+    object-fit: cover;
+}
+
 // mv
 .main-visual {
     position: relative;
@@ -64,7 +68,7 @@
     & .waveBox {
         position: relative;
         top: -1%;
-        height: 245px;
+        height: 275px;
         &__wave {
             position: absolute;
             bottom: 0;
@@ -89,14 +93,83 @@
 // Who I am
 .about {
     margin: 0 auto;
-    position: relative;
+    &__ttl {
+        margin-bottom: 2.5rem;
+    }
+    &__contents {
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+        & .textWrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $accentBc;
+            border-radius: 3vh;
+            padding: 3rem 5vw 3rem 3rem;
+            min-height: 29.9rem;
+            height: 100%;
+            > h3 {
+                padding-bottom: 1rem;
+            }
+            > p {
+                line-height: 1.55;
+                display: block;
+            }
+        }
+        & .myPhoto {
+            position: absolute;
+            right: 0;
+            bottom: 7.5%;
+            background-color: $waveBgFirst;
+            display: inline-block;
+            border-radius: 3vh;
+            width: auto;
+            & img {
+                opacity: 0.65;
+                display:block;
+                width: 100%;
+                min-width: 20.9rem;
+                max-height: 24.9rem;
+                height: 100%;
+                object-position: 100% 0;
+                border-radius: 3vh;
+            }
+        }
+    }
 }
+
 
 // Skills & Tools
 .skillBox {
     margin: 0 auto;
 }
 
+// Title
+.about .about__ttl,
+.skillBox .skillBox__ttl {
+    & .ttWrap {
+        & .ttlWrap__sub {
+            color: $contentsSubTtl;
+        }
+        & .ttlWrap__main {
+            position: relative;
+            display: inline-block;
+            color: $contentsMainTtl;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: calc(100% - 4px);
+                border-bottom: 4px solid;
+                border-color: $contentsMainTtl;
+            }
+        }
+    }
+}
+
+
+// Animations
 @keyframes bggradient{
     0% {
       background-position: 0% 50%;

@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .main-visual {
   position: relative;
   background: linear-gradient(45deg, #F0C27B, #4B1248);
@@ -77,7 +82,7 @@
 .main-visual .waveBox {
   position: relative;
   top: -1%;
-  height: 245px;
+  height: 275px;
 }
 
 .main-visual .waveBox__wave {
@@ -104,11 +109,93 @@
 
 .about {
   margin: 0 auto;
+}
+
+.about__ttl {
+  margin-bottom: 2.5rem;
+}
+
+.about__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
+  margin: 0 auto;
+}
+
+.about__contents .textWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f9f4ef;
+  border-radius: 3vh;
+  padding: 3rem 5vw 3rem 3rem;
+  min-height: 29.9rem;
+  height: 100%;
+}
+
+.about__contents .textWrap > h3 {
+  padding-bottom: 1rem;
+}
+
+.about__contents .textWrap > p {
+  line-height: 1.55;
+  display: block;
+}
+
+.about__contents .myPhoto {
+  position: absolute;
+  right: 0;
+  bottom: 7.5%;
+  background-color: #F0C27B;
+  display: inline-block;
+  border-radius: 3vh;
+  width: auto;
+}
+
+.about__contents .myPhoto img {
+  opacity: 0.65;
+  display: block;
+  width: 100%;
+  min-width: 20.9rem;
+  max-height: 24.9rem;
+  height: 100%;
+  -o-object-position: 100% 0;
+     object-position: 100% 0;
+  border-radius: 3vh;
 }
 
 .skillBox {
   margin: 0 auto;
+}
+
+.about .about__ttl .ttWrap .ttlWrap__sub,
+.skillBox .skillBox__ttl .ttWrap .ttlWrap__sub {
+  color: #8c7851;
+}
+
+.about .about__ttl .ttWrap .ttlWrap__main,
+.skillBox .skillBox__ttl .ttWrap .ttlWrap__main {
+  position: relative;
+  display: inline-block;
+  color: #716040;
+}
+
+.about .about__ttl .ttWrap .ttlWrap__main:before,
+.skillBox .skillBox__ttl .ttWrap .ttlWrap__main:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 4px);
+  border-bottom: 4px solid;
+  border-color: #716040;
 }
 
 @-webkit-keyframes bggradient {
