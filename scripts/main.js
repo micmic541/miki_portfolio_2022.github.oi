@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded',() => {
     $targetTtls = $doc.querySelectorAll('.ttlWrap__main');
     
     // animation trigger
-    // ※要素が見えると繰り返しされる＝治すMUST
+    // ※要素が見えると繰り返しされる＝治すMUST→コンテンツが見えた時に変更する？
     window.addEventListener('scroll',() => {
         for (let i = 0; i < $targetTtls.length; i++) {
             const getElDistance = $targetTtls[i].getBoundingClientRect().top + $targetTtls[i].clientHeight * .5;
