@@ -196,12 +196,17 @@ img {
 .about .about__ttl .ttWrap .ttlWrap__main > span,
 .skillBox .skillBox__ttl .ttWrap .ttlWrap__main > span {
   overflow: hidden;
+  vertical-align: bottom;
 }
 
 .about .about__ttl .ttWrap .ttlWrap__main > span > span,
 .skillBox .skillBox__ttl .ttWrap .ttlWrap__main > span > span {
-  -webkit-animation: showTxt 1s ease-in-out backwards;
-          animation: showTxt 1s ease-in-out backwards;
+  -webkit-animation: showTxt 1s ease-in-out forwards;
+          animation: showTxt 1s ease-in-out forwards;
+  overflow: hidden;
+  line-height: .9;
+  -webkit-transform: translateY(140%);
+          transform: translateY(140%);
 }
 
 .about .about__ttl .ttWrap .ttlWrap__main:before,
@@ -239,24 +244,16 @@ img {
 }
 
 @-webkit-keyframes showTxt {
-  0% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
   100% {
-    -webkit-transform: none;
-            transform: none;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
 @keyframes showTxt {
-  0% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
   100% {
-    -webkit-transform: none;
-            transform: none;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 

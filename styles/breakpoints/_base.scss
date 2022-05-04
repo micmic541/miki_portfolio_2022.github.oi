@@ -161,8 +161,12 @@ img {
             }
             > span {
                 overflow: hidden;
+                vertical-align: bottom;
                 > span {
-                    animation: showTxt 1s ease-in-out backwards;
+                    animation: showTxt 1s ease-in-out forwards;
+                    overflow: hidden;
+                    line-height: .9;
+                    transform: translateY(140%);
                 }
             }
             &:before {
@@ -192,10 +196,7 @@ img {
 }
 
 @keyframes showTxt {
-    0% {
-        transform: translateY(100%);
-    }
     100% {
-        transform: none;
+        transform: translateY(0%);
     }
 }
