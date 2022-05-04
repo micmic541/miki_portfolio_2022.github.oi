@@ -188,6 +188,22 @@ img {
   color: #716040;
 }
 
+.about .about__ttl .ttWrap .ttlWrap__main span,
+.skillBox .skillBox__ttl .ttWrap .ttlWrap__main span {
+  display: inline-block;
+}
+
+.about .about__ttl .ttWrap .ttlWrap__main > span,
+.skillBox .skillBox__ttl .ttWrap .ttlWrap__main > span {
+  overflow: hidden;
+}
+
+.about .about__ttl .ttWrap .ttlWrap__main > span > span,
+.skillBox .skillBox__ttl .ttWrap .ttlWrap__main > span > span {
+  -webkit-animation: showTxt 1s ease-in-out backwards;
+          animation: showTxt 1s ease-in-out backwards;
+}
+
 .about .about__ttl .ttWrap .ttlWrap__main:before,
 .skillBox .skillBox__ttl .ttWrap .ttlWrap__main:before {
   content: "";
@@ -219,6 +235,28 @@ img {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes showTxt {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes showTxt {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
