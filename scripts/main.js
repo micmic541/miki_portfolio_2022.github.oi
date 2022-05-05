@@ -3,17 +3,6 @@ document.addEventListener('DOMContentLoaded',() => {
     const $doc = document,
     $targetTtls = $doc.querySelectorAll('.ttlWrap__main');
     
-    // animation trigger
-    // ※要素が見えると繰り返しされる＝治すMUST→コンテンツが見えた時に変更する？
-    window.addEventListener('scroll',() => {
-        for (let i = 0; i < $targetTtls.length; i++) {
-            const getElDistance = $targetTtls[i].getBoundingClientRect().top + $targetTtls[i].clientHeight * .5;
-            if (innerHeight > getElDistance) {
-                    ttlAnimation();
-            } 
-        }
-    },{once: true});
-
     // ttl animation
     const ttlAnimation = () => {
         for (let i = 0; i < $targetTtls.length; i++) {
@@ -38,5 +27,17 @@ document.addEventListener('DOMContentLoaded',() => {
             }
         }
     }
+
+    // ttl animation trigger
+    const ttlShowTiming = () => {
+        for (let i = 0; i < $targetTtls.length; i++) {
+            const getElDistance = $targetTtls[i].getBoundingClientRect().top + $targetTtls[i].clientHeight * .5;
+            if (innerHeight > getElDistance) {
+                ttlAnimation();
+            } 
+        }
+    };
+    
+    window.addEventListener('scroll', ttlShowTiming());
 
 });
