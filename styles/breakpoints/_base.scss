@@ -156,18 +156,18 @@ img {
             position: relative;
             display: inline-block;
             color: $contentsMainTtl;
-            & span {
-                display: inline-block;
-            }
+            overflow: hidden;
+            vertical-align: bottom;
+            margin-bottom: 0 !important;
+            height: 100%;
+            padding-bottom: 3px;
             > span {
+                animation: showTxt .35s ease-out forwards;
                 overflow: hidden;
-                vertical-align: bottom;
-                > span {
-                    animation: showTxt 1s ease-in-out forwards;
-                    overflow: hidden;
-                    line-height: .9;
-                    transform: translateY(140%);
-                }
+                line-height: .9;
+                transform: translateY(100%);
+                display: inline-block;
+                margin-bottom: -3%;
             }
             &:before {
                 content: "";
@@ -176,6 +176,7 @@ img {
                 height: calc(100% - 4px);
                 border-bottom: 4px solid;
                 border-color: $contentsMainTtl;
+                top: 10%;
             }
         }
     }
@@ -197,6 +198,6 @@ img {
 
 @keyframes showTxt {
     100% {
-        transform: translateY(0%);
+        transform: translateY(10%);
     }
 }

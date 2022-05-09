@@ -15,9 +15,6 @@
 
 // Who I am
 .about {
-    &__ttl {
-        // margin-bottom: 2.5rem;
-    }
     &__contents {
         & .textWrap {
             padding: 2rem 0vw;
@@ -30,6 +27,24 @@
             & img {
                 max-height: 15.9rem;
                 min-width: 15.9rem;
+            }
+        }
+    }
+}
+
+// Title
+.about .about__ttl,
+.skillBox .skillBox__ttl {
+    & .ttWrap {
+        & .ttlWrap__main {
+            padding-bottom: 0;
+            > span {
+                transform: translateY(85%);
+                line-height: 1.2;
+            }
+            &:before {
+                height: calc(100% - 2px);
+                top: 10%;
             }
         }
     }

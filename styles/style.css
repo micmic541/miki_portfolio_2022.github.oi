@@ -188,27 +188,23 @@ img {
   position: relative;
   display: inline-block;
   color: #716040;
-}
-
-.about .about__ttl .ttWrap .ttlWrap__main span,
-.skillBox .skillBox__ttl .ttWrap .ttlWrap__main span {
-  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  margin-bottom: 0 !important;
+  height: 100%;
+  padding-bottom: 3px;
 }
 
 .about .about__ttl .ttWrap .ttlWrap__main > span,
 .skillBox .skillBox__ttl .ttWrap .ttlWrap__main > span {
-  overflow: hidden;
-  vertical-align: bottom;
-}
-
-.about .about__ttl .ttWrap .ttlWrap__main > span > span,
-.skillBox .skillBox__ttl .ttWrap .ttlWrap__main > span > span {
-  -webkit-animation: showTxt 1s ease-in-out forwards;
-          animation: showTxt 1s ease-in-out forwards;
+  -webkit-animation: showTxt .35s ease-out forwards;
+          animation: showTxt .35s ease-out forwards;
   overflow: hidden;
   line-height: .9;
-  -webkit-transform: translateY(140%);
-          transform: translateY(140%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  display: inline-block;
+  margin-bottom: -3%;
 }
 
 .about .about__ttl .ttWrap .ttlWrap__main:before,
@@ -219,6 +215,7 @@ img {
   height: calc(100% - 4px);
   border-bottom: 4px solid;
   border-color: #716040;
+  top: 10%;
 }
 
 @-webkit-keyframes bggradient {
@@ -247,15 +244,15 @@ img {
 
 @-webkit-keyframes showTxt {
   100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
   }
 }
 
 @keyframes showTxt {
   100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
   }
 }
 
@@ -302,6 +299,21 @@ img {
   .about__contents .myPhoto img {
     max-height: 15.9rem;
     min-width: 15.9rem;
+  }
+  .about .about__ttl .ttWrap .ttlWrap__main,
+  .skillBox .skillBox__ttl .ttWrap .ttlWrap__main {
+    padding-bottom: 0;
+  }
+  .about .about__ttl .ttWrap .ttlWrap__main > span,
+  .skillBox .skillBox__ttl .ttWrap .ttlWrap__main > span {
+    -webkit-transform: translateY(85%);
+            transform: translateY(85%);
+    line-height: 1.2;
+  }
+  .about .about__ttl .ttWrap .ttlWrap__main:before,
+  .skillBox .skillBox__ttl .ttWrap .ttlWrap__main:before {
+    height: calc(100% - 2px);
+    top: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */

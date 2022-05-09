@@ -7,17 +7,17 @@ document.addEventListener('DOMContentLoaded',() => {
     const ttlAnimation = () => {
         for (let i = 0; i < $targetTtls.length; i++) {
             const ttlEls = $targetTtls[i],
-                  ttlTxts = ttlEls.textContent,
+                  ttlTxts = ttlEls.textContent.trim(),
                   txtsArry = [];
 
             ttlEls.textContent = '';
 
             for (let j = 0; j < ttlTxts.split('').length; j++) {
                 const txtSplit = ttlTxts.split('');
-                if (txtSplit[j] === '') {
+                if (txtSplit[j] === ' ') {
                     txtsArry.push('  ');
                 } else {
-                    txtsArry.push('<span><span style="animation-delay: ' + (j*.2) +'s;">' + txtSplit[j] + '</span></span>')
+                    txtsArry.push('<span style="animation-delay: ' + (j*.2) +'s;">' + txtSplit[j] + '</span>')
                 }
             }
             
