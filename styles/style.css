@@ -313,7 +313,6 @@ img {
   }
   .about .about__ttl .ttWrap .ttlWrap__main:before,
   .skillBox .skillBox__ttl .ttWrap .ttlWrap__main:before {
-    height: calc(100% - 2px);
     top: 10%;
   }
 }
