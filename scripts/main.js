@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded',() => {
     // variables
     const $doc = document,
     $targetTtls = $doc.querySelectorAll('.ttlWrap__main');
+    console.log($targetTtls);
     
     // ttl animation
     const ttlAnimation = () => {
