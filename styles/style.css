@@ -23,7 +23,7 @@ img {
 }
 
 .main-visual__ttl .mv__ttlWrap h1 {
-  color: #fffffe;
+  color: #ffffff;
   font-size: 4.5em;
 }
 
@@ -74,7 +74,7 @@ img {
 }
 
 .main-visual__ttl .mv__snsWrap .mv__snsBox ul li:hover a .my-big {
-  color: #fffffe;
+  color: #ffffff;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
@@ -104,7 +104,7 @@ img {
 }
 
 .main-visual .waveBox__wave svg path {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .about {
@@ -112,7 +112,7 @@ img {
 }
 
 .about__ttl {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .about__contents {
@@ -134,15 +134,17 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f9f4ef;
-  border-radius: 3vh;
-  padding: 3rem 5vw 3rem 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 3vw;
   min-height: 29.9rem;
   height: 100%;
 }
 
 .about__contents .textWrap > h3 {
   padding-bottom: 1rem;
+  color: #4B1248;
 }
 
 .about__contents .textWrap > p {
@@ -151,25 +153,25 @@ img {
 }
 
 .about__contents .myPhoto {
-  position: absolute;
-  right: 0;
-  bottom: 7.5%;
+  margin: 0 auto;
   background-color: #F0C27B;
   display: inline-block;
-  border-radius: 3vh;
+  border-radius: 100vh;
   width: auto;
+  height: 100%;
 }
 
 .about__contents .myPhoto img {
+  margin: 0 auto;
   opacity: 0.65;
   display: block;
   width: 100%;
-  min-width: 20.9rem;
-  max-height: 24.9rem;
+  min-width: 18.9rem;
+  max-height: 18.9rem;
   height: 100%;
   -o-object-position: 100% 0;
      object-position: 100% 0;
-  border-radius: 3vh;
+  border-radius: 100vh;
 }
 
 .skillBox {
@@ -267,6 +269,15 @@ img {
   .main-visual .waveBox {
     height: 150px;
   }
+  .about__contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about__contents .textWrap {
+    padding: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -278,6 +289,19 @@ img {
   }
   .main-visual .waveBox {
     height: 80px;
+  }
+  .about__contents .textWrap {
+    padding: 2rem 0vw;
+  }
+  .about__contents .textWrap > p {
+    line-height: 1.85;
+  }
+  .about__contents .myPhoto {
+    position: relative;
+  }
+  .about__contents .myPhoto img {
+    max-height: 15.9rem;
+    min-width: 15.9rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

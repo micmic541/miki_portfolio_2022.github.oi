@@ -12,3 +12,25 @@
         height: 80px;
     }
 }
+
+// Who I am
+.about {
+    &__ttl {
+        // margin-bottom: 2.5rem;
+    }
+    &__contents {
+        & .textWrap {
+            padding: 2rem 0vw;
+            > p {
+                line-height: $sm-lineHeight;
+            }
+        }
+        & .myPhoto {
+            position: relative;
+            & img {
+                max-height: 15.9rem;
+                min-width: 15.9rem;
+            }
+        }
+    }
+}

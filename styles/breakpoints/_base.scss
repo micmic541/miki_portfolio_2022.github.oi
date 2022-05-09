@@ -82,7 +82,7 @@ img {
                 width: 100%;
                 height: fit-content;
                 & path {
-                    fill: $baseBc;
+                    fill: $darkTxt;
                 }
             }
         }
@@ -94,7 +94,7 @@ img {
 .about {
     margin: 0 auto;
     &__ttl {
-        margin-bottom: 2.5rem;
+        margin-bottom: $underTtl;
     }
     &__contents {
         display: flex;
@@ -104,36 +104,36 @@ img {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: $accentBc;
-            border-radius: 3vh;
-            padding: 3rem 5vw 3rem 3rem;
+            align-items: center;
+            padding: 0 3vw;
             min-height: 29.9rem;
             height: 100%;
             > h3 {
-                padding-bottom: 1rem;
+                padding-bottom: $underH3;
+                color: $waveBcSecond;
             }
             > p {
-                line-height: 1.55;
+                line-height: $pc-lineHeight;
                 display: block;
             }
         }
         & .myPhoto {
-            position: absolute;
-            right: 0;
-            bottom: 7.5%;
+            margin: 0 auto;
             background-color: $waveBgFirst;
             display: inline-block;
-            border-radius: 3vh;
+            border-radius: 100vh;
             width: auto;
+            height: 100%;
             & img {
+                margin: 0 auto;
                 opacity: 0.65;
                 display:block;
                 width: 100%;
-                min-width: 20.9rem;
-                max-height: 24.9rem;
+                min-width: 18.9rem;
+                max-height: 18.9rem;
                 height: 100%;
                 object-position: 100% 0;
-                border-radius: 3vh;
+                border-radius: 100vh;
             }
         }
     }
