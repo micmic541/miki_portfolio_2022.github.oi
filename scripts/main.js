@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded',() => {
-    // variables
+    // --variables--
     const $doc = document,
-     $targetTtls = $doc.querySelectorAll('.ttlWrap__main');
+     $targetTtls = $doc.querySelectorAll('.ttlWrap__main'),
+     $slideIn = $doc.querySelectorAll('.js-scroll-trigger');
     
-    // ttl animation
+    // --ttl animation--
     const ttlAnimation = () => {
         for (let i = 0; i < $targetTtls.length; i++) {
             const ttlEls = $targetTtls[i],
@@ -29,20 +30,40 @@ document.addEventListener('DOMContentLoaded',() => {
     }
 
     // animation trigger for title
-    const trigger = () => {
-        for (let i = 0; i < $targetTtls.length; i++) {
-            const rect = $targetTtls[i].getBoundingClientRect().top;
-            const scroll = window.pageXOffset || document.documentElement.scrollTop;
+    const triggerTtl = (els) => {
+        for (let i = 0; i < els.length; i++) {
+            const rect = els[i].getBoundingClientRect().top;
+            const scroll = window.pageXOffset;
             const offset = rect + scroll;
             const windowHeight = window.innerHeight;
-            if (scroll > offset - windowHeight + 150) {
+            if (scroll > offset - windowHeight + 200) {
                 ttlAnimation();
             }
         }
     }
 
-    window.addEventListener('scroll',trigger,{once:true});
-    
+    window.addEventListener('scroll',triggerTtl($targetTtls),{once:true});
+
+
+    // --animation for slide-in contents--
+    const scrollIn = (trigger) => {
+    window.addEventListener('scroll', ()=> {
+        for (let i = 0; i < trigger.length; i++) {
+            let position = trigger[i].getBoundingClientRect().top,
+                scroll = window.pageXOffset || document.documentElement.scrollTop,
+                offset = position + scroll,
+                windowHeight = window.innerHeight;
+                
+                if (scroll > offset - windowHeight + 200) {
+                    trigger[i].classList.add('is-active');
+                }
+            }
+        })
+    };
+        
+    if ($slideIn.length) {
+        scrollIn($slideIn);
+    }
     
 
 });

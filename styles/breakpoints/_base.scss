@@ -183,6 +183,16 @@ img {
     }
 }
 
+// Slide-in animation
+.about__contents {
+    transform: translateY(50px);
+    opacity: 0;
+}
+.about__contents.is-active {
+    transition: .65s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+}
 
 
 // Animations
