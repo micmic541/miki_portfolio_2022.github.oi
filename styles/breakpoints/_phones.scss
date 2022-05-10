@@ -41,11 +41,10 @@
             > span {
                 transform: translateY(85%);
                 line-height: 1.2;
-                margin-bottom: -5% !important;
             }
             &:before {
                 // height: calc(100% - 2px);
-                top: 10%;
+                top: 5% !important;
             }
         }
     }
