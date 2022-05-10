@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded',() => {
     // variables
     const $doc = document,
-    $targetTtls = $doc.querySelectorAll('.ttlWrap__main');
-    console.log($targetTtls);
+     $targetTtls = $doc.querySelectorAll('.ttlWrap__main');
     
     // ttl animation
     const ttlAnimation = () => {
@@ -29,16 +28,21 @@ document.addEventListener('DOMContentLoaded',() => {
         }
     }
 
-    // ttl animation trigger
-    const ttlShowTiming = () => {
+    // animation trigger for title
+    const trigger = () => {
         for (let i = 0; i < $targetTtls.length; i++) {
-            const getElDistance = $targetTtls[i].getBoundingClientRect().top + $targetTtls[i].clientHeight * .5;
-            if (innerHeight > getElDistance) {
+            const rect = $targetTtls[i].getBoundingClientRect().top;
+            const scroll = window.pageXOffset || document.documentElement.scrollTop;
+            const offset = rect + scroll;
+            const windowHeight = window.innerHeight;
+            if (scroll > offset - windowHeight + 150) {
                 ttlAnimation();
-            } 
+            }
         }
-    };
+    }
+
+    window.addEventListener('scroll',trigger,{once:true});
     
-    window.addEventListener('scroll', ttlShowTiming());
+    
 
 });
