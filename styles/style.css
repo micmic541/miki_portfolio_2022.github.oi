@@ -310,6 +310,7 @@ img {
     -webkit-transform: translateY(85%);
             transform: translateY(85%);
     line-height: 1.2;
+    margin-bottom: -5%;
   }
   .about .about__ttl .ttWrap .ttlWrap__main:before,
   .skillBox .skillBox__ttl .ttWrap .ttlWrap__main:before {
