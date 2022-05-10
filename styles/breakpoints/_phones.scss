@@ -39,11 +39,11 @@
         & .ttlWrap__main {
             padding-bottom: 0 !important;
             > span {
-                transform: translateY(85%);
+                transform: translateY(60%);
                 line-height: 1.2;
             }
             &:before {
-                // height: calc(100% - 2px);
+                height: calc(100% - 5px);
                 top: 3% !important;
             }
         }

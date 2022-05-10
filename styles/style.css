@@ -307,12 +307,13 @@ img {
   }
   .about .about__ttl .ttWrap .ttlWrap__main > span,
   .skillBox .skillBox__ttl .ttWrap .ttlWrap__main > span {
-    -webkit-transform: translateY(85%);
-            transform: translateY(85%);
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
     line-height: 1.2;
   }
   .about .about__ttl .ttWrap .ttlWrap__main:before,
   .skillBox .skillBox__ttl .ttWrap .ttlWrap__main:before {
+    height: calc(100% - 5px);
     top: 3% !important;
   }
 }
