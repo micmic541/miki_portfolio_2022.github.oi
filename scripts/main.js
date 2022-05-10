@@ -23,8 +23,7 @@ document.addEventListener('DOMContentLoaded',() => {
             }
             
             for (let k = 0; k < txtsArry.length; k++) {
-                ttlEls.innerHTML =
-                ttlEls.innerHTML + txtsArry[k];
+                ttlEls.innerHTML += txtsArry[k];
             }
         }
     }
@@ -33,7 +32,7 @@ document.addEventListener('DOMContentLoaded',() => {
     const triggerTtl = (els) => {
         for (let i = 0; i < els.length; i++) {
             const rect = els[i].getBoundingClientRect().top;
-            const scroll = window.pageXOffset;
+            const scroll = window.pageYOffset;
             const offset = rect + scroll;
             const windowHeight = window.innerHeight;
             if (scroll > offset - windowHeight + 200) {
@@ -50,11 +49,11 @@ document.addEventListener('DOMContentLoaded',() => {
     window.addEventListener('scroll', ()=> {
         for (let i = 0; i < trigger.length; i++) {
             let position = trigger[i].getBoundingClientRect().top,
-                scroll = window.pageXOffset || document.documentElement.scrollTop,
+                scroll = window.pageYOffset || document.documentElement.scrollTop,
                 offset = position + scroll,
                 windowHeight = window.innerHeight;
                 
-                if (scroll > offset - windowHeight + 200) {
+                if (scroll > offset - windowHeight) {
                     trigger[i].classList.add('is-active');
                 }
             }

@@ -119,14 +119,15 @@ img {
         }
         & .myPhoto {
             margin: 0 auto;
-            background-color: $waveBgFirst;
+            // background-color: $waveBgFirst;
+            background: linear-gradient(45deg, $darkTxtSub,$waveBgFirst);
             display: inline-block;
             border-radius: 100vh;
             width: auto;
             height: 100%;
             & img {
                 margin: 0 auto;
-                opacity: 0.65;
+                // opacity: 0.65;
                 display:block;
                 width: 100%;
                 min-width: 18.9rem;
