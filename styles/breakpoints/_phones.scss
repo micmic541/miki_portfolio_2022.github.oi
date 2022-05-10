@@ -37,7 +37,7 @@
 .skillBox .skillBox__ttl {
     & .ttWrap {
         & .ttlWrap__main {
-            padding-bottom: 0;
+            padding-bottom: 0 !important;
             > span {
                 transform: translateY(85%);
                 line-height: 1.2;

@@ -303,7 +303,7 @@ img {
   }
   .about .about__ttl .ttWrap .ttlWrap__main,
   .skillBox .skillBox__ttl .ttWrap .ttlWrap__main {
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
   }
   .about .about__ttl .ttWrap .ttlWrap__main > span,
   .skillBox .skillBox__ttl .ttWrap .ttlWrap__main > span {
