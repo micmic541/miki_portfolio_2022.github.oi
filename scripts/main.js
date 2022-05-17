@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded',() => {
     // --variables--
     const $doc = document,
-     $targetTtls = $doc.querySelectorAll('.ttlWrap__main'),
-     $slideInFirst = $doc.querySelector('#js-scroll-trigger_first'),
-     $slideIn = $doc.querySelectorAll('.js-scroll-trigger');
+    $targetTtls = $doc.querySelectorAll('.ttlWrap__main'),
+    $slideInFirst = $doc.querySelector('#js-scroll-trigger_first'),
+    $slideIn = $doc.querySelectorAll('.js-scroll-trigger');
     
     
     // --ttl animation--
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded',() => {
             if (txtSplit[j] === ' ') {
                 txtsArry.push('  ');
             } else {
-                txtsArry.push('<span style="animation-delay: ' + (j*.2) +'s;">' + txtSplit[j] + '</span>')
+                txtsArry.push('<span style="animation-delay: ' + (j*.15) +'s;">' + txtSplit[j] + '</span>')
             }
         }
         
@@ -71,6 +71,5 @@ document.addEventListener('DOMContentLoaded',() => {
     if ($slideIn.length) {
         scrollIn($slideIn);
     }
-
 
 });

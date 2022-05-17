@@ -13,7 +13,6 @@ img {
     background: linear-gradient(45deg, $waveBgFirst,$waveBcSecond);
     background-size: 200% 200%;
     animation: bggradient 20s ease infinite;
-
     height: auto;
     &__ttl {
         font-family: $enFont;
@@ -91,14 +90,12 @@ img {
 
 // Who I am
 .about {
-    margin: 0 auto;
     &__ttl {
         margin-bottom: $underTtl;
     }
     &__contents {
         display: flex;
         position: relative;
-        margin: 0 auto;
         & .textWrap {
             display: flex;
             flex-direction: column;
@@ -118,7 +115,6 @@ img {
         }
         & .myPhoto {
             margin: 0 auto;
-            // background-color: $waveBgFirst;
             background: linear-gradient(45deg, $darkTxtSub,$waveBgFirst);
             display: inline-block;
             border-radius: 100vh;
@@ -126,7 +122,6 @@ img {
             height: 100%;
             & img {
                 margin: 0 auto;
-                // opacity: 0.65;
                 display:block;
                 width: 100%;
                 min-width: 18.9rem;
@@ -152,9 +147,15 @@ img {
     
 }
 
+// Work
+.workBox {
+    height: 70vh;
+}
+
 // Title
 .about .about__ttl,
-.skillBox .skillBox__ttl {
+.skillBox .skillBox__ttl,
+.workBox .workBox__ttl {
     & .ttWrap {
         & .ttlWrap__sub {
             color: $contentsSubTtl;

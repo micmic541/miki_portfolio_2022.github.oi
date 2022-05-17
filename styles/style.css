@@ -107,10 +107,6 @@ img {
   fill: #ffffff;
 }
 
-.about {
-  margin: 0 auto;
-}
-
 .about__ttl {
   margin-bottom: 2rem;
 }
@@ -120,7 +116,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin: 0 auto;
 }
 
 .about__contents .textWrap {
@@ -181,13 +176,19 @@ img {
   height: 70vh;
 }
 
+.workBox {
+  height: 70vh;
+}
+
 .about .about__ttl .ttWrap .ttlWrap__sub,
-.skillBox .skillBox__ttl .ttWrap .ttlWrap__sub {
+.skillBox .skillBox__ttl .ttWrap .ttlWrap__sub,
+.workBox .workBox__ttl .ttWrap .ttlWrap__sub {
   color: #8c7851;
 }
 
 .about .about__ttl .ttWrap .ttlWrap__main,
-.skillBox .skillBox__ttl .ttWrap .ttlWrap__main {
+.skillBox .skillBox__ttl .ttWrap .ttlWrap__main,
+.workBox .workBox__ttl .ttWrap .ttlWrap__main {
   position: relative;
   display: inline-block;
   color: #716040;
@@ -199,7 +200,8 @@ img {
 }
 
 .about .about__ttl .ttWrap .ttlWrap__main > span,
-.skillBox .skillBox__ttl .ttWrap .ttlWrap__main > span {
+.skillBox .skillBox__ttl .ttWrap .ttlWrap__main > span,
+.workBox .workBox__ttl .ttWrap .ttlWrap__main > span {
   -webkit-animation: showTxt .35s ease-out forwards;
           animation: showTxt .35s ease-out forwards;
   overflow: hidden;
@@ -211,7 +213,8 @@ img {
 }
 
 .about .about__ttl .ttWrap .ttlWrap__main:before,
-.skillBox .skillBox__ttl .ttWrap .ttlWrap__main:before {
+.skillBox .skillBox__ttl .ttWrap .ttlWrap__main:before,
+.workBox .workBox__ttl .ttWrap .ttlWrap__main:before {
   content: "";
   position: absolute;
   width: 100%;
