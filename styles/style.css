@@ -151,9 +151,11 @@ img {
   margin: 0 auto;
   background: linear-gradient(45deg, #eaddcf, #F0C27B);
   display: inline-block;
-  border-radius: 100vh;
+  border-radius: 61% 38% 62% 39% / 26% 49% 51% 75%;
   width: auto;
   height: 100%;
+  -webkit-box-shadow: 11px 10px 0px 5px #eaddcf;
+          box-shadow: 11px 10px 0px 5px #eaddcf;
 }
 
 .about__contents .myPhoto img {
@@ -165,7 +167,7 @@ img {
   height: 100%;
   -o-object-position: 100% 0;
      object-position: 100% 0;
-  border-radius: 100vh;
+  border-radius: 61% 38% 62% 39% / 26% 49% 51% 75%;
 }
 
 .skillBox {

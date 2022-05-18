@@ -117,9 +117,10 @@ img {
             margin: 0 auto;
             background: linear-gradient(45deg, $darkTxtSub,$waveBgFirst);
             display: inline-block;
-            border-radius: 100vh;
+            border-radius: 61% 38% 62% 39% / 26% 49% 51% 75%;
             width: auto;
             height: 100%;
+            box-shadow: 11px 10px 0px 5px $darkTxtSub;
             & img {
                 margin: 0 auto;
                 display:block;
@@ -128,7 +129,7 @@ img {
                 max-height: 18.9rem;
                 height: 100%;
                 object-position: 100% 0;
-                border-radius: 100vh;
+                border-radius: 61% 38% 62% 39% / 26% 49% 51% 75%;
             }
         }
     }
