@@ -22,3 +22,21 @@
         }
     }
 }
+
+// Work
+.workBox {
+    &__ttl {
+        margin: 0 auto;
+        & .ttWrap {
+            position: static;
+            right: 0%;
+        }
+    }
+}
+
+// Title
+.about .about__ttl,
+.skillBox .skillBox__ttl,
+.workBox .workBox__ttl {
+    text-align: left;
+}

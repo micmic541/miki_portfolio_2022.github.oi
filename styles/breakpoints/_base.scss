@@ -143,6 +143,9 @@ img {
     left: 0;
     width: 100%;
     height: 70vh;
+    &__ttl {
+        text-align: center;
+    }
 }
 .skillBox__bg {
     
@@ -151,6 +154,13 @@ img {
 // Work
 .workBox {
     height: 70vh;
+    &__ttl {
+        position: relative;
+        & .ttWrap {
+            position: absolute;
+            right: 5%;
+        }
+    }
 }
 
 // Title

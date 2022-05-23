@@ -181,8 +181,21 @@ img {
   height: 70vh;
 }
 
+.skillBox__ttl {
+  text-align: center;
+}
+
 .workBox {
   height: 70vh;
+}
+
+.workBox__ttl {
+  position: relative;
+}
+
+.workBox__ttl .ttWrap {
+  position: absolute;
+  right: 5%;
 }
 
 .about .about__ttl .ttWrap .ttlWrap__sub,
@@ -299,6 +312,18 @@ img {
   }
   .about__contents .textWrap {
     padding: 0;
+  }
+  .workBox__ttl {
+    margin: 0 auto;
+  }
+  .workBox__ttl .ttWrap {
+    position: static;
+    right: 0%;
+  }
+  .about .about__ttl,
+  .skillBox .skillBox__ttl,
+  .workBox .workBox__ttl {
+    text-align: left;
   }
 }
 
