@@ -72,4 +72,6 @@ document.addEventListener('DOMContentLoaded',() => {
         scrollIn($slideIn);
     }
 
+    // skill & tool のアニメーション：RWDにはborder-radiusを平らにする
+
 });
