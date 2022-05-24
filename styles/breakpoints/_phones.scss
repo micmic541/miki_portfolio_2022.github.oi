@@ -34,6 +34,9 @@
 
 // Skills & Tools
 .skillBox {
+    &:before {
+        right: 0;
+    }
     &__contents {
         & .contentsWrap {
             & .item {

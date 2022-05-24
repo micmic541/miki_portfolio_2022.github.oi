@@ -109,6 +109,7 @@ img {
             > h3 {
                 padding-bottom: $underH3;
                 color: $waveBcSecond;
+                font-weight: $h3ttlWeight;
             }
             > p {
                 line-height: $pc-lineHeight;
@@ -140,6 +141,7 @@ img {
 .skillBox {
     position: relative;
     height: auto;
+    padding: 5rem 0;
     &__ttl {
         text-align: center;
         margin-bottom: $underTtl;
@@ -162,6 +164,7 @@ img {
             > h3 {
                 padding-bottom: $underH3;
                 color: $waveBcSecond;
+                font-weight: $h3ttlWeight;
             }
         }
         & .contentsWrap {
@@ -177,7 +180,7 @@ img {
                 margin: 0 9ch 1.35em 0;
                 align-self: center;
                 > i {
-                    color: $darkTxt;
+                    color: $contentsMainTtl;
                 }
                 > .devicon {
                     &:before {

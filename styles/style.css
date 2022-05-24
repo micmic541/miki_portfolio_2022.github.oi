@@ -145,6 +145,7 @@ img {
 .about__contents .textWrap > h3 {
   padding-bottom: 1rem;
   color: #4B1248;
+  font-weight: 700;
 }
 
 .about__contents .textWrap > p {
@@ -176,6 +177,7 @@ img {
 .skillBox {
   position: relative;
   height: auto;
+  padding: 5rem 0;
 }
 
 .skillBox__ttl {
@@ -203,6 +205,7 @@ img {
 .skillBox__contents .textWrap > h3 {
   padding-bottom: 1rem;
   color: #4B1248;
+  font-weight: 700;
 }
 
 .skillBox__contents .contentsWrap {
@@ -234,7 +237,7 @@ img {
 }
 
 .skillBox__contents .contentsWrap .item > i {
-  color: #ffffff;
+  color: #716040;
 }
 
 .skillBox__contents .contentsWrap .item > .devicon:before {
@@ -410,6 +413,9 @@ img {
   .about__contents .myPhoto img {
     max-height: 15.9rem;
     min-width: 15.9rem;
+  }
+  .skillBox:before {
+    right: 0;
   }
   .skillBox__contents .contentsWrap .item {
     margin: 0 3.5vw 1.35em 0 !important;
