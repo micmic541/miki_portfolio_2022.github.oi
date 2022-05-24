@@ -175,11 +175,12 @@ img {
 
 .skillBox {
   position: relative;
-  height: 70vh;
+  height: auto;
 }
 
 .skillBox__ttl {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .skillBox:before {
@@ -193,6 +194,56 @@ img {
   border-radius: 0 20vh 20vh 0;
   opacity: .75;
   z-index: -1;
+}
+
+.skillBox__contents .textWrap {
+  padding-bottom: 1rem;
+}
+
+.skillBox__contents .textWrap > h3 {
+  padding-bottom: 1rem;
+  color: #4B1248;
+}
+
+.skillBox__contents .contentsWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.skillBox__contents .contentsWrap .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 9ch 1.35em 0;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.skillBox__contents .contentsWrap .item > i {
+  color: #ffffff;
+}
+
+.skillBox__contents .contentsWrap .item > .devicon:before {
+  font-size: 4em;
+}
+
+.skillBox__contents .contentsWrap .item > svg {
+  width: 4em;
+  height: 4em;
 }
 
 .workBox {
@@ -359,6 +410,9 @@ img {
   .about__contents .myPhoto img {
     max-height: 15.9rem;
     min-width: 15.9rem;
+  }
+  .skillBox__contents .contentsWrap .item {
+    margin: 0 3.5vw 1.35em 0 !important;
   }
   .about .about__ttl .ttWrap .ttlWrap__main,
   .skillBox .skillBox__ttl .ttWrap .ttlWrap__main {

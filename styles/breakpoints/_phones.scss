@@ -32,6 +32,17 @@
     }
 }
 
+// Skills & Tools
+.skillBox {
+    &__contents {
+        & .contentsWrap {
+            & .item {
+                margin: 0 3.5vw 1.35em 0 !important;
+            }
+        }
+    }
+}
+
 // Title
 .about .about__ttl,
 .skillBox .skillBox__ttl {
