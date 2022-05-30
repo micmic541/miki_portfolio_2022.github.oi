@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded',() => {
         els.forEach(el => {
             if (el.isIntersecting) {
                 ttlTrigger(el.target);
+                // observe only one time
+                observer.unobserve(el.target);
             }
         });
     }
