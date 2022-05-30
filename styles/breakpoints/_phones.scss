@@ -36,6 +36,8 @@
 .skillBox {
     &:before {
         right: 0;
+        transform: translateX(0);
+        border-radius: 0;
     }
     &__contents {
         & .contentsWrap {
@@ -62,5 +64,13 @@
                 top: 3% !important;
             }
         }
+    }
+}
+
+// Slide-in animation
+.skillBox.is-active {
+    &:before {
+        transform: none;
+        border-radius: 0 20vh 20vh 0;
     }
 }

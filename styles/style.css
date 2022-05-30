@@ -196,6 +196,8 @@ img {
   border-radius: 0 20vh 20vh 0;
   opacity: .75;
   z-index: -1;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .skillBox__contents .textWrap {
@@ -313,11 +315,18 @@ img {
 }
 
 .about__contents.is-active {
-  -webkit-transition: .65s ease-in-out;
-  transition: .65s ease-in-out;
+  -webkit-transition: 0.65s cubic-bezier(0.78, 0.68, 0, 0.7);
+  transition: 0.65s cubic-bezier(0.78, 0.68, 0, 0.7);
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+}
+
+.skillBox.is-active:before {
+  -webkit-transition: 1s cubic-bezier(0.78, 0.68, 0, 0.7);
+  transition: 1s cubic-bezier(0.78, 0.68, 0, 0.7);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 @-webkit-keyframes bggradient {
@@ -416,6 +425,9 @@ img {
   }
   .skillBox:before {
     right: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    border-radius: 0;
   }
   .skillBox__contents .contentsWrap .item {
     margin: 0 3.5vw 1.35em 0 !important;
@@ -435,6 +447,11 @@ img {
   .skillBox .skillBox__ttl .ttWrap .ttlWrap__main:before {
     height: calc(100% - 0px);
     top: 3% !important;
+  }
+  .skillBox.is-active:before {
+    -webkit-transform: none;
+            transform: none;
+    border-radius: 0 20vh 20vh 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -157,6 +157,8 @@ img {
         border-radius: 0 20vh 20vh 0;
         opacity: .75;
         z-index: -1;
+        transform: translateX(-100%);
+
     }
     &__contents {
         & .textWrap {
@@ -252,9 +254,15 @@ img {
     opacity: 0;
 }
 .about__contents.is-active {
-    transition: .65s ease-in-out;
+    transition: .65s cubic-bezier(0.78, 0.68, 0, 0.7);
     transform: translateY(0);
     opacity: 1;
+}
+.skillBox.is-active {
+    &:before {
+        transition: 1s cubic-bezier(0.78, 0.68, 0, 0.7);
+        transform: translateX(0);
+    }
 }
 
 
