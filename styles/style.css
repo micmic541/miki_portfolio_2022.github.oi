@@ -74,10 +74,12 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: black;
+  background: #ffffff;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
   opacity: 0;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 /*メニューの中身*/
@@ -92,8 +94,8 @@ img {
   /*最大幅（お好みで調整を）*/
   height: 100%;
   background: #fff;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-transform: translateX(500%);
   transform: translateX(500%);
 }
