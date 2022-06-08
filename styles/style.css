@@ -522,6 +522,9 @@ img {
 }
 
 @media (max-width: 576px) {
+  #nav-content {
+    width: 75%;
+  }
   .main-visual__ttl {
     padding-top: 10vw;
   }
