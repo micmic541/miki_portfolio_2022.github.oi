@@ -1,6 +1,11 @@
 // header
 #nav-content {
     width: 75%;
+    & ul {
+        & li {
+            font-size: 1.5rem;
+        }
+    }
 }
 
 // mv

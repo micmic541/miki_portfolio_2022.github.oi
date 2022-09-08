@@ -8,9 +8,6 @@ img {
 }
 
 // header
-header {
-}
-
 #nav-drawer {
     position: relative;
 }
@@ -87,12 +84,29 @@ bottom: -16px;
     right: 0;
     z-index: 9;
     width: 90%;
-    max-width: 450px;/*最大幅（お好みで調整を）*/
+    max-width: 450px;
     height: 100%;
     background: #fff;
     transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
     -webkit-transform: translateX(500%);
     transform: translateX(500%);
+    & ul {
+        height:90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        & li {
+            padding: 3vw 0;
+            font-weight: bold;
+            font-size: $underTtl;
+            & a {
+                text-decoration: none;
+                color: $contentsSubTtl;
+            }
+        }
+    }
 }
   
   /*チェックがついたら表示させる*/
