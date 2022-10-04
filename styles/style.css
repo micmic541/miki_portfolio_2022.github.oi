@@ -6,6 +6,7 @@
 img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 #nav-drawer {
@@ -258,6 +259,9 @@ img {
 
 .about__ttl {
   margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  left: -40%;
 }
 
 .about__contents {
@@ -402,19 +406,36 @@ img {
 
 .workBox {
   height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .workBox__ttl {
   position: relative;
+  text-align: center;
 }
 
 .workBox__ttl .ttWrap {
   position: absolute;
-  right: 5%;
+  right: 10%;
+}
+
+.workBox__contents {
+  margin: 0 auto;
 }
 
 .workBox__contents .swiper {
-  width: 600px;
+  width: 100%;
   height: 300px;
 }
 
@@ -540,6 +561,12 @@ img {
   .about__contents .textWrap {
     padding: 0;
   }
+  .workBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .workBox__ttl {
     margin: 0 auto;
   }
@@ -551,6 +578,7 @@ img {
   .skillBox .skillBox__ttl,
   .workBox .workBox__ttl {
     text-align: left;
+    left: 0%;
   }
 }
 

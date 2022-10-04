@@ -5,6 +5,7 @@
 
 img {
     object-fit: cover;
+    width: 100%;
 }
 
 // header
@@ -219,6 +220,9 @@ bottom: -16px;
 .about {
     &__ttl {
         margin-bottom: $underTtl;
+        text-align: center;
+        position: relative;
+        left: -40%;
     }
     &__contents {
         display: flex;
@@ -328,16 +332,21 @@ bottom: -16px;
 // Work
 .workBox {
     height: 70vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
     &__ttl {
         position: relative;
+        text-align: center;
         & .ttWrap {
             position: absolute;
-            right: 5%;
+            right: 10%;
         }
     }
     &__contents {
         & .swiper {
-            width: 600px;
+            width: 100%;
             height: 300px;
           }
     }

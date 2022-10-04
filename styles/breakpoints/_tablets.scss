@@ -25,6 +25,7 @@
 
 // Work
 .workBox {
+    flex-direction: column;
     &__ttl {
         margin: 0 auto;
         & .ttWrap {
@@ -39,4 +40,5 @@
 .skillBox .skillBox__ttl,
 .workBox .workBox__ttl {
     text-align: left;
+    left: 0%;
 }
