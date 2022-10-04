@@ -335,6 +335,12 @@ bottom: -16px;
             right: 5%;
         }
     }
+    &__contents {
+        & .swiper {
+            width: 600px;
+            height: 300px;
+          }
+    }
 }
 
 // Title

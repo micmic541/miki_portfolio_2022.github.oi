@@ -413,6 +413,11 @@ img {
   right: 5%;
 }
 
+.workBox__contents .swiper {
+  width: 600px;
+  height: 300px;
+}
+
 .about .about__ttl .ttWrap .ttlWrap__sub,
 .skillBox .skillBox__ttl .ttWrap .ttlWrap__sub,
 .workBox .workBox__ttl .ttWrap .ttlWrap__sub {
