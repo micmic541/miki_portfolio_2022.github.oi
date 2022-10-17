@@ -79,11 +79,13 @@ document.addEventListener('DOMContentLoaded',() => {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
-        slidesPerView: 1.5,
+        slidesPerView: 2,
         spaceBetween: 10,
+        centeredSlides : true,
         //auto play
         autoplay: {
             delay: 5000,
+            speed: 650
           },
         // If we need pagination
         pagination: {
