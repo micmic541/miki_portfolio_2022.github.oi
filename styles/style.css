@@ -405,7 +405,7 @@ img {
 }
 
 .workBox {
-  height: 70vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,7 +452,8 @@ img {
 }
 
 .workBox__ttl .swiper-btns .swiper-button-next:after, .workBox__ttl .swiper-btns .swiper-button-prev:after {
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: bold;
   background: #eaddcf;
   border-radius: 100%;
   padding: 20px 25px;

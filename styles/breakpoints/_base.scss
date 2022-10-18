@@ -331,7 +331,7 @@ bottom: -16px;
 
 // Work
 .workBox {
-    height: 70vh;
+    height: auto;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -340,7 +340,6 @@ bottom: -16px;
         position: relative;
         text-align: center;
         & .ttWrap {
-            // position: absolute;
             margin-bottom: $underTtl;
             right: 10%;
         }
@@ -361,7 +360,8 @@ bottom: -16px;
                 z-index: 0;
             }
             & .swiper-button-next:after, .swiper-button-prev:after {
-                font-size: 20px;
+                font-size: 15px;
+                font-weight: bold;
                 background: $darkTxtSub;
                 border-radius: 100%;
                 padding: 20px 25px;
