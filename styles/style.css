@@ -448,6 +448,7 @@ img {
 .workBox__ttl .swiper-btns .swiper-button-next, .workBox__ttl .swiper-btns .swiper-button-prev {
   width: auto;
   color: #716040;
+  z-index: 0;
 }
 
 .workBox__ttl .swiper-btns .swiper-button-next:after, .workBox__ttl .swiper-btns .swiper-button-prev:after {
@@ -599,6 +600,7 @@ img {
     padding: 0;
   }
   .workBox {
+    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -610,6 +612,20 @@ img {
   .workBox__ttl .ttWrap {
     position: static;
     right: 0%;
+  }
+  .workBox__ttl .textWrap {
+    text-align: inherit;
+    padding: 0 0 2rem;
+  }
+  .workBox__ttl .swiper-btns {
+    text-align: right;
+    padding-bottom: 2rem;
+  }
+  .workBox__contents .swiper-slide p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 40vw;
+    overflow: hidden;
   }
   .about .about__ttl,
   .skillBox .skillBox__ttl,

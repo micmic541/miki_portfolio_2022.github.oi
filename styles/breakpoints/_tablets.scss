@@ -25,12 +25,29 @@
 
 // Work
 .workBox {
+    height: auto;
     flex-direction: column;
     &__ttl {
         margin: 0 auto;
         & .ttWrap {
             position: static;
             right: 0%;
+        }
+        & .textWrap {
+            text-align: inherit;
+            padding: 0 0 $underTtl;
+        }
+        & .swiper-btns {
+            text-align: right;
+            padding-bottom: $underTtl;
+        }
+    }
+    &__contents {
+        & .swiper-slide p {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 40vw;
+            overflow: hidden;
         }
     }
 }
