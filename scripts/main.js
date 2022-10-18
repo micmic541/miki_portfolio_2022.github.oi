@@ -87,11 +87,6 @@ document.addEventListener('DOMContentLoaded',() => {
             delay: 5000,
             speed: 650
           },
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      
         // Navigation arrows
         navigation: {
           nextEl: '.swiper-button-next',

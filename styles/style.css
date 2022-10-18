@@ -435,9 +435,36 @@ img {
   padding: 0 2rem 2rem 2rem;
 }
 
+.workBox__ttl .swiper-btns {
+  text-align: left;
+}
+
+.workBox__ttl .swiper-btns .arrow {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+.workBox__ttl .swiper-btns .swiper-button-next, .workBox__ttl .swiper-btns .swiper-button-prev {
+  width: auto;
+  color: #716040;
+}
+
+.workBox__ttl .swiper-btns .swiper-button-next:after, .workBox__ttl .swiper-btns .swiper-button-prev:after {
+  font-size: 20px;
+  background: #eaddcf;
+  border-radius: 100%;
+  padding: 20px 25px;
+}
+
 .workBox__contents .swiper {
   width: 100%;
   height: 300px;
+}
+
+.workBox__contents .swiper-wrapper .swiper-slide a {
+  text-decoration: none;
+  color: #716040;
 }
 
 .workBox__contents .swiper-wrapper .swiper-slide img {
@@ -446,6 +473,7 @@ img {
   max-height: 251px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 5px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 5px;
+  margin-bottom: 1rem;
 }
 
 .about .about__ttl .ttWrap .ttlWrap__sub,
