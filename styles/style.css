@@ -331,6 +331,7 @@ img {
   position: relative;
   height: auto;
   padding: 5rem 0;
+  margin-bottom: 5rem;
 }
 
 .skillBox__ttl {
@@ -520,6 +521,43 @@ img {
   border-bottom: 4px solid;
   border-color: #716040;
   top: 10%;
+}
+
+footer {
+  position: relative;
+  background: linear-gradient(45deg, #F0C27B, #4B1248);
+  background-size: 200% 200%;
+  -webkit-animation: bggradient 20s ease infinite;
+          animation: bggradient 20s ease infinite;
+  overflow: hidden;
+}
+
+footer .waveBox {
+  position: relative;
+  top: 0%;
+  height: 300px;
+}
+
+footer .waveBox__wave {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  width: 100%;
+  height: 0%;
+}
+
+footer .waveBox__wave svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+footer .waveBox__wave svg path {
+  fill: #ffffff;
 }
 
 .about__contents {
