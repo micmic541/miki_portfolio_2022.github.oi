@@ -310,7 +310,6 @@ bottom: -16px;
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                // margin: 0 3.5vw 1.35em 0;
                 margin: 0 9ch 1.35em 0;
                 align-self: center;
                 > i {
@@ -340,6 +339,7 @@ bottom: -16px;
     &__ttl {
         position: relative;
         text-align: center;
+        margin-left: 3rem;
         & .ttWrap {
             margin-bottom: $underTtl;
             right: 10%;
@@ -434,6 +434,13 @@ bottom: -16px;
         }
     }
 }
+.contactBox__ttl {
+    & .ttWrap {
+        & .ttlWrap__main {
+            color: $darkTxt;
+        }
+    }
+}
 
 // Footer
 footer {
@@ -450,6 +457,17 @@ footer {
         }
         &__contents {
             top: 9rem;
+            & ul {
+                list-style-type: none;
+                padding-left: 0;
+                display: flex;
+                gap: 1.5rem;
+                flex-wrap: wrap;
+            }
+            & ul li a {
+                color: $darkTxt;
+                text-decoration: none;
+            }
         }
         &__contents,
         &__ttl {

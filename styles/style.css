@@ -424,6 +424,7 @@ img {
 .workBox__ttl {
   position: relative;
   text-align: center;
+  margin-left: 3rem;
 }
 
 .workBox__ttl .ttWrap {
@@ -531,6 +532,10 @@ img {
   top: 10%;
 }
 
+.contactBox__ttl .ttWrap .ttlWrap__main {
+  color: #ffffff;
+}
+
 footer {
   position: relative;
   background: linear-gradient(45deg, #F0C27B, #4B1248);
@@ -551,6 +556,22 @@ footer .contactBox__ttl {
 
 footer .contactBox__contents {
   top: 9rem;
+}
+
+footer .contactBox__contents ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .contactBox__contents ul li a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 footer .contactBox__contents, footer .contactBox__ttl {
