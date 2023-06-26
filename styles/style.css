@@ -208,7 +208,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: .9vw;
+  padding-left: 20px;
 }
 
 .main-visual__ttl .mv__snsWrap .mv__snsBox ul li {
@@ -218,15 +218,15 @@ img {
 .main-visual__ttl .mv__snsWrap .mv__snsBox ul li a .my-big {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-  font-size: 1.55em;
-  margin-right: 15px;
+  font-size: 2.35em;
+  margin-right: 20px;
   color: #eaddcf;
 }
 
 .main-visual__ttl .mv__snsWrap .mv__snsBox ul li:hover a .my-big {
   color: #ffffff;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main-visual .waveBox {
@@ -686,6 +686,12 @@ footer .waveBox__wave svg path {
   }
   .main-visual__ttl .mv__ttlWrap h1 {
     font-size: 2em;
+  }
+  .main-visual__ttl .mv__snsWrap .mv__snsBox ul {
+    padding-left: 0;
+  }
+  .main-visual__ttl .mv__snsWrap .mv__snsBox ul li a .my-big {
+    font-size: 2.9em;
   }
   .main-visual .waveBox {
     height: 80px;

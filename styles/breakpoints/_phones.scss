@@ -17,6 +17,14 @@
                 font-size: $mvTtlSm;
             }
         }
+        & .mv__snsWrap {
+            & .mv__snsBox ul {
+                padding-left: 0;
+                & li a .my-big {
+                    font-size: 2.9em;
+                }
+            }
+        }
     }
     & .waveBox {
         height: 80px;
