@@ -90,6 +90,12 @@ footer {
     & .waveBox__wave {
         top: 0;
     }
+    & .contactBox {
+        &__ttl {
+            right: initial;
+            left: 0;
+        }
+    }
 }
 
 // Slide-in animation

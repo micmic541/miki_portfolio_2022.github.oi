@@ -435,6 +435,24 @@ footer {
     background-size: 200% 200%;
     animation: bggradient 20s ease infinite;
     overflow: hidden;
+    & .contactBox {
+        position: relative;
+        z-index: 1;
+        &__ttl {
+            top: 5rem;
+        }
+        &__contents {
+            top: 9rem;
+        }
+        &__contents,
+        &__ttl {
+            position: absolute;
+            right: 0;
+        }
+    }
+    & .waveBox__wave {
+        top: 0;
+    }
     & .waveBox {
         position: relative;
         top: 0%;

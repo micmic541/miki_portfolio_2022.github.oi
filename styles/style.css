@@ -532,6 +532,28 @@ footer {
   overflow: hidden;
 }
 
+footer .contactBox {
+  position: relative;
+  z-index: 1;
+}
+
+footer .contactBox__ttl {
+  top: 5rem;
+}
+
+footer .contactBox__contents {
+  top: 9rem;
+}
+
+footer .contactBox__contents, footer .contactBox__ttl {
+  position: absolute;
+  right: 0;
+}
+
+footer .waveBox__wave {
+  top: 0;
+}
+
 footer .waveBox {
   position: relative;
   top: 0%;
@@ -736,6 +758,10 @@ footer .waveBox__wave svg path {
   }
   footer .waveBox__wave {
     top: 0;
+  }
+  footer .contactBox__ttl {
+    right: initial;
+    left: 0;
   }
   .skillBox.is-active:before {
     -webkit-transform: none;
