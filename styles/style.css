@@ -438,6 +438,7 @@ img {
 
 .workBox__ttl .swiper-btns {
   text-align: left;
+  padding-bottom: 2rem;
 }
 
 .workBox__ttl .swiper-btns .arrow {
@@ -468,6 +469,13 @@ img {
 .workBox__contents .swiper-wrapper .swiper-slide a {
   text-decoration: none;
   color: #716040;
+}
+
+.workBox__contents .swiper-wrapper .swiper-slide a .slider-caption {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 95%;
+  overflow: hidden;
 }
 
 .workBox__contents .swiper-wrapper .swiper-slide img {
@@ -680,12 +688,11 @@ footer .waveBox__wave svg path {
   }
   .workBox__ttl .swiper-btns {
     text-align: right;
-    padding-bottom: 2rem;
   }
   .workBox__contents .swiper-slide p {
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 40vw;
+    width: 40vw !important;
     overflow: hidden;
   }
   .about .about__ttl,

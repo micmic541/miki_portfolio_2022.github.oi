@@ -39,14 +39,13 @@
         }
         & .swiper-btns {
             text-align: right;
-            padding-bottom: $underTtl;
         }
     }
     &__contents {
         & .swiper-slide p {
             text-overflow: ellipsis;
             white-space: nowrap;
-            width: 40vw;
+            width: 40vw !important;
             overflow: hidden;
         }
     }

@@ -350,6 +350,7 @@ bottom: -16px;
         }
         & .swiper-btns {
             text-align: left;
+            padding-bottom: $underTtl;
             & .arrow {
                 position: relative;
                 display: inline-block;
@@ -378,6 +379,12 @@ bottom: -16px;
             & .swiper-slide a {
                 text-decoration: none;
                 color: $contentsMainTtl;
+            }
+            & .swiper-slide a .slider-caption {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 95%;
+                overflow: hidden;
             }
             & .swiper-slide img{
                 border-radius: 5vh;
