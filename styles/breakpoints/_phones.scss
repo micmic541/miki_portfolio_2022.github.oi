@@ -85,6 +85,13 @@
     }
 }
 
+// Footer
+footer {
+    & .waveBox__wave {
+        top: 0;
+    }
+}
+
 // Slide-in animation
 .skillBox.is-active {
     &:before {

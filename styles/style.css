@@ -734,6 +734,9 @@ footer .waveBox__wave svg path {
     height: calc(100% - 0px);
     top: 3% !important;
   }
+  footer .waveBox__wave {
+    top: 0;
+  }
   .skillBox.is-active:before {
     -webkit-transform: none;
             transform: none;
