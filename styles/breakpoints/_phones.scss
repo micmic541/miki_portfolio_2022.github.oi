@@ -87,8 +87,11 @@
 
 // Footer
 footer {
-    & .waveBox__wave {
-        top: 0;
+    & .waveBox {
+        height: 335px;
+        &__wave {
+            top: 0;
+        }
     }
     & .contactBox {
         &__ttl {
